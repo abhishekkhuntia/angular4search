@@ -3,7 +3,7 @@
   <header class="header fixed">
     <div class="clearfix">
         <h1>The Interview - Abhishek Khuntia</h1>
-        <input type="text" placeholder="Search by name!" [(ngModel)]="filterBy" (input)="checkNReset($event)" />
+        <input type="text" [disabled]="showLoader" placeholder="Search by name!" [(ngModel)]="filterBy" (input)="checkNReset($event)" />
     </div>
   </header>
   <div class="container">
