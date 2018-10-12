@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+.header{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px #000;
+    justify-content: space-between;
+    background: #222126;
+}
+header > div {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header h1{
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
+    float: left;
+    color: #FFF;
+    font: 300 20px/1.67 'Segoe UI Light','Segoe UI',Arial,sans-serif;
+}
+.header input[type="text"]{
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 51px;
+    border: none;
+    float: right;
+    outline: none;
+}
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+     font:300 16px/1.67 'Segoe UI Light','Segoe UI',Arial,sans-serif;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.modal-shade{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 100000;
+    background: rgba(72,72,72,.8);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    text-align: center;
+}
+.modal-shade img{
+    position: absolute;
+    margin: 40vh auto;
+    height: 50px;
+    width: auto;
+}
+.container{
+    width: 100%;
+    background-color: #ececec;
+    min-height: 100vh;
+}
+.container .content{
+    width: 70%;
+    min-height: 100%;;
+    margin: 0 auto;
+}

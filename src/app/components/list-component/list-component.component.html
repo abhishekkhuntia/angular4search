@@ -1,0 +1,13 @@
+<div>
+  <ul class="list-ul" #draggable>
+    <li draggable="true" (dragend)="dragend($event)"  (drag)="dragStart($event, index)" (dragover)="dropped($event, index)" class="profile-list clearfix" *ngFor="let item of listData | searchByName: filterBy; let index = index;">
+      <div>
+          <img [src]="item.avatar" [alt]="item.name"/>
+      </div>
+      <div class="emp-info"> 
+        <h2>{{item.name}}</h2>
+        <h2>{{item.Company}}</h2>
+      </div>
+    </li>
+  </ul>
+</div>
